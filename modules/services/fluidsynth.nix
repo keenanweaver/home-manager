@@ -48,6 +48,8 @@ in {
         lib.platforms.linux)
     ];
 
+    home.packages = [ pkgs.fluidsynth ];
+
     systemd.user.services.fluidsynth = {
       Unit = {
         Description = "FluidSynth Daemon";
